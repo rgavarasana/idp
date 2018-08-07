@@ -1,0 +1,11 @@
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\bin\Release\netcoreapp2.0\ravi.learn.identity.mvc.deps.json
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\bin\Release\netcoreapp2.0\ravi.learn.identity.mvc.runtimeconfig.json
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\bin\Release\netcoreapp2.0\ravi.learn.identity.mvc.runtimeconfig.dev.json
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\bin\Release\netcoreapp2.0\ravi.learn.identity.mvc.dll
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\bin\Release\netcoreapp2.0\ravi.learn.identity.mvc.pdb
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.csprojAssemblyReference.cache
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.csproj.CoreCompileInputs.cache
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.AssemblyInfoInputs.cache
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.AssemblyInfo.cs
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.dll
+C:\Users\gavar\source\repos\idp\ravi.learn.identity.mvc\obj\Release\netcoreapp2.0\ravi.learn.identity.mvc.pdb

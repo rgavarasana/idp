@@ -9,7 +9,7 @@ namespace ravi.learn.identity.api.Controllers
     public class ValuesController : Controller
     {
         [HttpGet]
-        [Authorize]
+       // [Authorize]
         public IActionResult GetValues()
         {
             return  Content($"Welcome {User.Identity.Name}");

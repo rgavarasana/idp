@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
@@ -24,26 +25,29 @@ namespace ravi.learn.identity.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>
                 {
                     options.Authority = "https://localhost:44363";
                     options.ApiName = "DemoApi";
                     options.RequireHttpsMetadata = true;
-                    options.ApiSecret = "MySecret";   
+                   // options.Scope.Add("profile");
+                   // options. = "MySecret";
+                    options.NameClaimType = "name";
                 });
 
             services.AddAuthorization();
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("SPA", policy =>
-                {
-                    policy.WithOrigins("https://localhost:44306")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
-            });
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("SPA", policy =>
+            //    {
+            //        policy.WithOrigins("https://localhost:44391")
+            //        .AllowAnyHeader()
+            //        .AllowAnyMethod();
+            //    });
+            //});
             services.AddMvc();
         }
 
@@ -54,7 +58,7 @@ namespace ravi.learn.identity.api
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors("SPA");
+            //app.UseCors("SPA");
 
             app.UseAuthentication();
 

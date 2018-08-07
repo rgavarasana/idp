@@ -21,7 +21,7 @@ namespace ravi.learn.identity.identityserver
         {
             return new List<ApiResource>
             {
-                new ApiResource("DemoApi")
+                new ApiResource("DemoApi", new List<string> {  "name"})
             };
         }
 
@@ -34,8 +34,8 @@ namespace ravi.learn.identity.identityserver
                     ClientId = "AuthWeb",
                     ClientName = "AuthWeb Demo Client",
                     AllowedGrantTypes = GrantTypes.Implicit,
-                    RedirectUris = { "https://localhost:44306/signin-oidc" },
-                    PostLogoutRedirectUris = { "https://localhost:44306/signout-callback-oidc" },
+                    RedirectUris = { "https://localhost:44391/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:44391/signout-callback-oidc" },
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -63,10 +63,27 @@ namespace ravi.learn.identity.identityserver
                         IdentityServerConstants.StandardScopes.Profile,
                         "DemoApi"
                     },
-                    RedirectUris = { "https://localhost:44306/SignInCallback.html" },
-                    PostLogoutRedirectUris = { "https://localhost:44306/SignOutCallback.html" },
-                    AllowedCorsOrigins = { "https://localhost:44306" },
+                    RedirectUris = { "https://localhost:44391/SignInCallback.html" },
+                    PostLogoutRedirectUris = { "https://localhost:44391/SignOutCallback.html" },
+                    AllowedCorsOrigins = { "https://localhost:44391" },
                     RequireConsent = false
+                },
+                new Client
+                {
+                    ClientId  = "WebApp",
+                    ClientSecrets = { new Secret("secret".Sha256())},
+                    AllowedGrantTypes =  GrantTypes.Hybrid,
+                    RedirectUris = { "https://localhost:44391/signin-oidc"},
+                    PostLogoutRedirectUris = { "https://localhost:44391/signout-callback-oidc"},
+                    AllowOfflineAccess = true,
+                    RequireConsent = false,
+                    AllowedScopes =  
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "DemoApi"
+                    }
+
                 }
             };
         }

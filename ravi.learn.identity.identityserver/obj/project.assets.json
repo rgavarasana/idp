@@ -12441,11 +12441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gavar\\source\\repos\\ravi.learn.identity\\ravi.learn.identity.identityserver\\ravi.learn.identity.identityserver.csproj",
+      "projectUniqueName": "C:\\Users\\gavar\\source\\repos\\idp\\ravi.learn.identity.identityserver\\ravi.learn.identity.identityserver.csproj",
       "projectName": "ravi.learn.identity.identityserver",
-      "projectPath": "C:\\Users\\gavar\\source\\repos\\ravi.learn.identity\\ravi.learn.identity.identityserver\\ravi.learn.identity.identityserver.csproj",
+      "projectPath": "C:\\Users\\gavar\\source\\repos\\idp\\ravi.learn.identity.identityserver\\ravi.learn.identity.identityserver.csproj",
       "packagesPath": "C:\\Users\\gavar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gavar\\source\\repos\\ravi.learn.identity\\ravi.learn.identity.identityserver\\obj\\",
+      "outputPath": "C:\\Users\\gavar\\source\\repos\\idp\\ravi.learn.identity.identityserver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

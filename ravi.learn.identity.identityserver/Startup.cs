@@ -22,15 +22,15 @@ namespace ravi.learn.identity.identityserver
                 ;
             //.AddCookieAuthentication();
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("idp", policy =>
-                {
-                    policy.WithOrigins("https://localhost:44306")
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
-            });
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("idp", policy =>
+            //    {
+            //        policy.WithOrigins("https://localhost:44391")
+            //        .AllowAnyHeader()
+            //        .AllowAnyMethod();
+            //    });
+            //});
 
         }
 
