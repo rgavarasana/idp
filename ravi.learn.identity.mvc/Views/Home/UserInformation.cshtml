@@ -1,0 +1,35 @@
+﻿@using System.Security.Claims
+
+<div class="starter-template">
+   @* <h1>Welcome @User.FindFirst(ClaimTypes.GivenName).Value, @User.FindFirst(ClaimTypes.Surname).Value!</h1>*@
+    <p class="lead">Here are your claims</p>
+    <ul>
+        @foreach (var claim in User.Claims)
+        {
+            <li>
+                <em>@claim.Type</em> : @claim.Value
+            </li>
+        }
+    </ul>
+    <button class="btn" id="callApiBtn">Call Api</button>
+</div>
+<script>
+    var btn = document.getElementById("callApiBtn");
+    btn.onclick = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/user");
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                var apiUser = JSON.parse(xhr.responseText);
+                alert("Called the API as the user - id:" + apiUser.id + " name:" + apiUser.name);
+
+            } else {
+                alert("Something went wrong. Status code:" + xhr.status)
+
+            }
+
+        }
+        xhr.send();
+
+    }
+</script>

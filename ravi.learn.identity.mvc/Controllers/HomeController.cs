@@ -17,6 +17,14 @@ namespace ravi.learn.identity.mvc.Controllers
 {
     public class HomeController : Controller
     {
+
+        [Route("userinformation")]
+        [Authorize]
+        public IActionResult UserInformation()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();

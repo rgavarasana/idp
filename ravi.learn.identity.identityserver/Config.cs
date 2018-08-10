@@ -77,13 +77,28 @@ namespace ravi.learn.identity.identityserver
                     PostLogoutRedirectUris = { "https://localhost:44391/signout-callback-oidc"},
                     AllowOfflineAccess = true,
                     RequireConsent = false,
-                    AllowedScopes =  
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+
+                        "DemoApi"
+                    }
+                },
+                new Client
+                {
+                    ClientId = "AuthWeb_JS",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = {"https://localhost:44391/SilentSigninCallback.html" },
+                    AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         "DemoApi"
-                    }
-
+                    },
+                    AllowedCorsOrigins = {"https://localhost:44391" },
+                    AllowAccessTokensViaBrowser = true,
+                    RequireConsent = false
                 }
             };
         }
