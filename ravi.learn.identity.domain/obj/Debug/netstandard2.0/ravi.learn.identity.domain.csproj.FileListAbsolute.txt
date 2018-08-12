@@ -25,3 +25,12 @@ C:\Users\gavar\source\repos\idp\ravi.learn.identity.domain\obj\Debug\netstandard
 C:\Users\gavar\source\repos\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.AssemblyInfo.cs
 C:\Users\gavar\source\repos\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.dll
 C:\Users\gavar\source\repos\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.pdb
+D:\code\learn\idp\ravi.learn.identity.domain\bin\Debug\netstandard2.0\ravi.learn.identity.domain.deps.json
+D:\code\learn\idp\ravi.learn.identity.domain\bin\Debug\netstandard2.0\ravi.learn.identity.domain.dll
+D:\code\learn\idp\ravi.learn.identity.domain\bin\Debug\netstandard2.0\ravi.learn.identity.domain.pdb
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.csprojAssemblyReference.cache
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.csproj.CoreCompileInputs.cache
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.AssemblyInfoInputs.cache
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.AssemblyInfo.cs
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.dll
+D:\code\learn\idp\ravi.learn.identity.domain\obj\Debug\netstandard2.0\ravi.learn.identity.domain.pdb
