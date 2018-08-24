@@ -22,7 +22,7 @@
         client_id: "AuthWeb_JS",
         response_type: "id_token token",
         scope: "openid profile DemoApi",
-        silent_redirect_uri = "https://localhost:44391/SilentSignInCallback.html"
+        silent_redirect_uri: "https://localhost:44391/SilentSignInCallback.html"
     };
 
     var btn = document.getElementById("callApiBtn");
@@ -36,13 +36,13 @@
                 alert("Called the API as the user - id:" + apiUser.id + " name:" + apiUser.name);
 
             } else {
-                alert("Something went wrong. Status code:" + xhr.status)
+                alert("Something went wrong. Status code:" + xhr.status);
 
             }
 
-        }
+        };
         xhr.send();
-    }
+    };
 
     var userManager = new Oidc.UserManager(userMgrSettings);
     userManager.signinSilent().then(function (x) {

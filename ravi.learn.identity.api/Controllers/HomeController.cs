@@ -5,6 +5,13 @@ namespace ravi.learn.identity.web.Controllers
 {
     public class HomeController : Controller
     {
+
+        [Route("api/user")]
+        public IActionResult Get()
+        {
+            return Ok(new { Name = User.FindFirst("name").Value });
+        }
+
         //public async Task<IActionResult> Index()
         //{
         //    var disco = await DiscoveryClient.GetAsync("https://localhost:44363");
@@ -58,6 +65,8 @@ namespace ravi.learn.identity.web.Controllers
         {
             return View();
         }
+
+
 
         //[Route("Spa")]
         //public IActionResult Spa()
