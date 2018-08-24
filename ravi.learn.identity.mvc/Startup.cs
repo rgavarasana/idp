@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using ravi.learn.identity.mvc.Services;
 
 namespace ravi.learn.identity.mvc
 {
@@ -61,6 +63,15 @@ namespace ravi.learn.identity.mvc
                     options.TokenValidationParameters.NameClaimType = "name";
 
                 });
+
+            var profiles = new Dictionary<string, UserProfile>
+            {
+                { "BobbyZ", new UserProfile ("Bobby","Zindel", new[]{ "User" }) }
+            };
+
+            services.AddSingleton<IProfileService>(new DummyProfileService(profiles));
+            services.AddSingleton<IClaimsTransformation, ProfileClaimsTransformation>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
