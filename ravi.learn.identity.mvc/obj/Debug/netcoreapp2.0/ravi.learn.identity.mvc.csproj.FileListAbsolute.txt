@@ -20,3 +20,14 @@ D:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.ide
 D:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.AssemblyInfo.cs
 D:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.dll
 D:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.pdb
+C:\code\learn\idp\ravi.learn.identity.mvc\bin\Debug\netcoreapp2.0\ravi.learn.identity.mvc.deps.json
+C:\code\learn\idp\ravi.learn.identity.mvc\bin\Debug\netcoreapp2.0\ravi.learn.identity.mvc.runtimeconfig.json
+C:\code\learn\idp\ravi.learn.identity.mvc\bin\Debug\netcoreapp2.0\ravi.learn.identity.mvc.runtimeconfig.dev.json
+C:\code\learn\idp\ravi.learn.identity.mvc\bin\Debug\netcoreapp2.0\ravi.learn.identity.mvc.dll
+C:\code\learn\idp\ravi.learn.identity.mvc\bin\Debug\netcoreapp2.0\ravi.learn.identity.mvc.pdb
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.csprojAssemblyReference.cache
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.csproj.CoreCompileInputs.cache
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.AssemblyInfoInputs.cache
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.AssemblyInfo.cs
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.dll
+C:\code\learn\idp\ravi.learn.identity.mvc\obj\Debug\netcoreapp2.0\ravi.learn.identity.mvc.pdb

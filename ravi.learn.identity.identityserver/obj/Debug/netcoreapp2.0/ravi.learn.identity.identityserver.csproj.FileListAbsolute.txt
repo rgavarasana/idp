@@ -42,3 +42,14 @@ D:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\rav
 D:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.AssemblyInfo.cs
 D:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.dll
 D:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.pdb
+C:\code\learn\idp\ravi.learn.identity.identityserver\bin\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.deps.json
+C:\code\learn\idp\ravi.learn.identity.identityserver\bin\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.runtimeconfig.json
+C:\code\learn\idp\ravi.learn.identity.identityserver\bin\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.runtimeconfig.dev.json
+C:\code\learn\idp\ravi.learn.identity.identityserver\bin\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.dll
+C:\code\learn\idp\ravi.learn.identity.identityserver\bin\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.pdb
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.csprojAssemblyReference.cache
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.csproj.CoreCompileInputs.cache
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.AssemblyInfoInputs.cache
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.AssemblyInfo.cs
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.dll
+C:\code\learn\idp\ravi.learn.identity.identityserver\obj\Debug\netcoreapp2.0\ravi.learn.identity.identityserver.pdb

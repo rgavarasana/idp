@@ -223,11 +223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\learn\\idp\\ravi.learn.identity.domain\\ravi.learn.identity.domain.csproj",
+      "projectUniqueName": "C:\\code\\learn\\idp\\ravi.learn.identity.domain\\ravi.learn.identity.domain.csproj",
       "projectName": "ravi.learn.identity.domain",
-      "projectPath": "D:\\code\\learn\\idp\\ravi.learn.identity.domain\\ravi.learn.identity.domain.csproj",
+      "projectPath": "C:\\code\\learn\\idp\\ravi.learn.identity.domain\\ravi.learn.identity.domain.csproj",
       "packagesPath": "C:\\Users\\gavar\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\learn\\idp\\ravi.learn.identity.domain\\obj\\",
+      "outputPath": "C:\\code\\learn\\idp\\ravi.learn.identity.domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

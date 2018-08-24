@@ -64,7 +64,7 @@ namespace ravi.learn.identity.mvc.Controllers
                     httpClient.SetBearerToken(accessToken);
                     try
                     {
-                        var content = await httpClient.GetStringAsync("https://localhost:44301/api/values/user");
+                        var content = await httpClient.GetStringAsync("https://localhost:44301/api/user");
                         // content = await httpClient.GetStringAsync("https://localhost:44363/resources");
                         ViewBag.ApiResponse = content;
                     }
