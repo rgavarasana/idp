@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -48,7 +50,9 @@ namespace ravi.learn.identity.mvc
                     options.ClientSecret = "secret";
                     options.ResponseType = OpenIdConnectResponseType.CodeIdToken;
                     options.Scope.Add("DemoApi");
+                    options.Scope.Add("profile");
                     options.Scope.Add("offline_access");
+                    options.Scope.Add(ClaimTypes.DateOfBirth);
                     options.SignedOutRedirectUri = "/";
                     options.SaveTokens = true;
                     options.RequireHttpsMetadata = true;
@@ -66,11 +70,29 @@ namespace ravi.learn.identity.mvc
 
             var profiles = new Dictionary<string, UserProfile>
             {
-                { "BobbyZ", new UserProfile ("Bobby","Zindel", new[]{ "User" }) }
+                { "BobbyZ", new UserProfile ("Bobby","Zindel", new[]{ "User" }) },
+                { "RickA", new UserProfile ("Rick","Ascord", new[]{ "AdminUser" }) }
             };
 
             services.AddSingleton<IProfileService>(new DummyProfileService(profiles));
             services.AddSingleton<IClaimsTransformation, ProfileClaimsTransformation>();
+
+            services.AddAuthorization(options =>
+            {
+                options.DefaultPolicy = new AuthorizationPolicyBuilder(CookieAuthenticationDefaults.AuthenticationScheme)
+                    .RequireAuthenticatedUser()
+                    .Build();
+
+                options.AddPolicy("ageLimited", policy =>
+                {
+                    policy.RequireAssertion(ctx =>
+                    {
+                        var dob = ctx.User.FindFirstValue(ClaimTypes.DateOfBirth);
+                        var dateOfBirth = DateTime.Parse(dob);
+                        return (dateOfBirth < DateTime.Now.AddYears(-21));
+                    });
+                });
+            });
 
         }
 

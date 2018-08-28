@@ -1,6 +1,7 @@
 ﻿using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
+using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 
@@ -13,7 +14,8 @@ namespace ravi.learn.identity.identityserver
             return new List<IdentityResource>
             {
                 new IdentityResources.OpenId(),
-                new IdentityResources.Profile()
+                new IdentityResources.Profile(),
+               new IdentityResource("dob",new[]{ClaimTypes.DateOfBirth })
             };
         }
 
@@ -81,9 +83,11 @@ namespace ravi.learn.identity.identityserver
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-
+                        
+                        //ClaimTypes.DateOfBirth,
                         "DemoApi"
                     }
+                   
                 },
                 new Client
                 {
@@ -93,7 +97,7 @@ namespace ravi.learn.identity.identityserver
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Profile,                        
                         "DemoApi"
                     },
                     AllowedCorsOrigins = {"https://localhost:44391" },
@@ -117,7 +121,22 @@ namespace ravi.learn.identity.identityserver
                         new Claim("name", "BobbyZ"),
                         new Claim(ClaimTypes.Name, "BobbyZ"),
                         new Claim(ClaimTypes.GivenName, "Bobby"),
-                        new Claim(ClaimTypes.Surname, "Zindel")
+                        new Claim(ClaimTypes.Surname, "Zindel"),
+                        new Claim(ClaimTypes.DateOfBirth, DateTime.Now.AddYears(-22).ToString())
+                    }
+                },
+                new TestUser
+                {
+                    SubjectId = "E1B1435C-8FB7-4BFB-ABF2-4A218A8C02AE",
+                    Username = "RickA",
+                    Password = "passw0rd",
+                    Claims =
+                    {
+                        new Claim("name", "RickA"),
+                        new Claim(ClaimTypes.Name, "RickA"),
+                        new Claim(ClaimTypes.GivenName, "Rick"),
+                        new Claim(ClaimTypes.Surname, "Ascord"),
+                        new Claim(ClaimTypes.DateOfBirth, DateTime.Now.AddYears(-19).ToString())
                     }
                 }
             };

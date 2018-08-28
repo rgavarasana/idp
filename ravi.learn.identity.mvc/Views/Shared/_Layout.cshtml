@@ -44,6 +44,7 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                        <li role="presentation"><a asp-controller="Home" asp-action="CallApi">Invoke Api</a></li>
+                       <li role="presentation"><a asp-controller="Home" asp-action="AgeLimited">Age Restricted</a></li>
                        @* <li role="presentation"><a asp-controller="auth" asp-action="EditProfile">Edit Profile</a></li>*@
                         <li role="presentation" class="active">
                             <form method="post" asp-controller="auth" asp-action="SignOut">

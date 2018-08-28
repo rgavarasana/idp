@@ -49,6 +49,12 @@ namespace ravi.learn.identity.mvc.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [Route("AgeLimited")]
+        [Authorize(Policy = "ageLimited")]
+        public  IActionResult AgeLimited()
+        {
+            return View();
+        }
 
         [Route("[controller]/CallApi")]
         [Authorize]
